@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #0D0D0D;
+}
+.main {
+    padding: 100px;
+}
+ 
+.main .mainBody {
+    background: url('../image/back.png') center;
+    background-color: #191919;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 4px 154px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 4px 154px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 53px 75px 53px 90px;color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+   
+    height: 100%;
+}
+.main .mainBody .mainInfo {
+    display: grid;
+    grid-gap: 40px;
+}
+.main .mainBody .mainInfo .mainTitle {
+    display: grid;
+    grid-gap: 10px;
+}
+.main .mainBody .mainInfo .mainTitle span:first-child {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.main .mainBody .mainInfo .mainTitle span:last-child {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #F46D49;
+}
+.main .mainBody .mainInfo .mainText {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 150%;
+}
+.main .mainBody .mainInfo .mainButton {
+    display: grid;
+    grid-gap: 30px;
+    align-content: center;
+}
+.main .mainBody .mainInfo .mainButton a {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main .mainBody .mainInfo .mainButton a:last-child {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    border: none;
+    text-decoration: none;
+    padding: 12px 37px;
+    background: #383CFF;
+    box-shadow: 0px 4px 50px rgba(56, 60, 255, 0.2);
+    border-radius: 4px;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.main .mainBody .mainInfo .mainButton  img {
+    display: none;
+}
+.main .mainImage img {
+   width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        padding: 0px;
+    }
+    .main .mainBody {
+        border-radius: 0;
+        grid-template-columns: 1fr;
+        padding: 50px 40px;
+        text-align: center;
+    }
+    .main .mainBody .mainInfo .mainTitle span:first-child {
+        font-size: 38px;
+    }
+    .main .mainBody .mainInfo .mainTitle span:last-child {
+        font-size: 20px;
+    }
+    .main .mainBody .mainInfo .mainButton img {
+        display: grid;
+        justify-self: center;
+        width: 100%;
+    }
+    .main .mainBody .mainInfo .mainButton a:last-child {
+        justify-self: center;
+    }
+    .main .mainImage {
+        display: none;
+    }
+}
+
+
