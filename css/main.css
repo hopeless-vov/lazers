@@ -20,7 +20,8 @@ body {
     border-radius: 20px;
     box-shadow: 0px 4px 154px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
-    padding: 53px 75px 53px 90px;color: #ffffff;
+    padding: 53px 75px 53px 90px;
+    color: #ffffff;
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -130,5 +131,42 @@ body {
         display: none;
     }
 }
+@media screen and (max-height: 731px) {
+    .main .mainBody {
+        padding: 50px 0 50px  0; 
+        }
+    .main .mainImage img {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        }
+ }
+ @media screen and (min-height: 640px) and (max-height: 730px) {
+    .main .mainBody {
+        padding: 30px 0 30px  0; 
+        }
+    .main .mainImage img {
+        margin-top: 7px;
+        margin-bottom: 7px;
+        }
+        .main .mainBody .mainInfo {
+            grid-gap: 20px;
+        }
+ }
+ @media screen and (max-height: 639px) {
+    .main .mainBody {
+        padding: 5px; 
+        }
+    .main .mainImage img {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        }
 
+    .main .mainBody .mainInfo {
+        grid-gap: 3px;
+    }
+    .main .mainBody .mainInfo {
+        grid-gap: 5px;
+    }
+ }
+ 
 
